@@ -8,7 +8,7 @@ function QuickEnquiryButton({ isOpen, openModal, closeModal }) {
     <>
       <button
         onClick={openModal}
-        className="fixed flex items-center gap-2 border text-[#F66F4D] border-[#F66F4D] bg-backGround  bottom-8 right-8 bg-blue-500 text-white px-6 py-4 rounded-full shadow-lg hover:bg-blue-600"
+        className="fixed flex items-center gap-2 border text-[#F66F4D] border-[#F66F4D] bg-backGround bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-6 py-4 rounded-full shadow-lg hover:bg-blue-600"
       >
         Quick Enquiry{" "}
         <span>
