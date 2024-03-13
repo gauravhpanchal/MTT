@@ -11,14 +11,14 @@ const Hero = () => {
       <div className="flex flex-col justify-center">
         <div className="flex md:flex-row items-center flex-col-reverse md:mx-32 mx-2">
           <div className=" flex-1 text-center">
-            <h4 className="text-base mt-8 font-bold text-secondary">
+            <h4 className="text-base mt-8 font-bold text-textSecondary">
               Best Outstation Cab Service in Mumbai
             </h4>
-            <h1 className="md:text-5xl text-3xl text-center mt-4 font-bold text-primary">
+            <h1 className="md:text-5xl text-3xl text-center mt-4 font-bold text-textPrimary">
               Get the best Deals on Outstation Cab services with Maharashtra
               Tour and Travel
             </h1>
-            <h4 className="text-lg text-secondary  mt-4 text-center font-semibold">
+            <h4 className="text-lg text-textSecondary  mt-4 text-center font-semibold">
               Explore Maharashtra hassle-free with our exclusive outstation cab
               deals at Maharashtra Tour and Travel. Book now for the ultimate
               journey through Maharashtra's wonders!
@@ -33,10 +33,10 @@ const Hero = () => {
           </div>
         </div>
         <div className="mx-auto mt-8 space-x-4 font-semibold">
-          <button className="px-4 py-2 border rounded-md border-primary text-primary hover:text-[#ffffff] hover:bg-primary ">
+          <button className="px-4 py-2 border rounded-md bg-buttonPrimary text-buttonText hover:text-buttonPrimary hover:bg-buttonText ">
             Enquire now
           </button>
-          <button className="px-4 py-2 border rounded-md border-primary text-primary hover:text-[#ffffff] hover:bg-primary">
+          <button className="px-4 py-2 border rounded-md border-buttonPrimary text-buttonPrimary hover:text-buttonText hover:bg-buttonPrimary">
             Contact us
           </button>
         </div>
@@ -59,14 +59,14 @@ const Hero = () => {
       {/* Section 2 - About us */}
       <div className="flex md:flex-row flex-col-reverse items-center gap-4 md:gap-16 md:px-32 px-4 py-8 ">
         <div className="flex-1 space-y-4 md:text-center">
-          <h4 className="text-base text-center text-secondary font-bold ">
+          <h4 className="text-base text-center text-textSecondary font-bold ">
             Know more about us
           </h4>
-          <h1 className="text-[32px] leading-9 text-primary text-center font-bold">
+          <h1 className="text-[32px] leading-9 text-textPrimary text-center font-bold">
             Maharashtra Tour and Travel: The Ultimate Destination with Premier
             Taxi Service in Mumbai
           </h1>
-          <h4 className="text-base text-secondary font-bold text-justify">
+          <h4 className="text-base text-textSecondary font-bold text-justify">
             Maharashtra Tour and Travel provides a comprehensive range of
             transportation services, including taxi, car, and bus rentals in{" "}
             {""}
