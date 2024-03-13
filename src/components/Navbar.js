@@ -59,7 +59,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div>
-            <button className="border text-[#F66F4D] hover:bg-[#F66F4D] hover:text-[#ffffff] flex gap-2 items-center border-[#F66F4D] py-2 px-6 rounded-full ">
+            <button className="border text-buttonPrimary hover:bg-buttonPrimary hover:text-[#ffffff] flex gap-2 items-center border-buttonPrimary py-2 px-6 rounded-full ">
               Enquire now{" "}
               <span>
                 <FaPaperPlane />
