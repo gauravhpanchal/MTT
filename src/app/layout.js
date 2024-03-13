@@ -28,10 +28,10 @@ export default function RootLayout({ children }) {
         <meta name="description" content="Description" />
       </head>
       <body className={inter.className}>
-        <div className="sticky top-0">
+        <div className="sticky top-0 bg-bgSecondary">
           <Navbar />
         </div>
-        <div>{children}</div>
+        <div className="bg-bgSecondary">{children}</div>
         {/* Web */}
         {/* <div className="hidden md:block">
           <div className="flex items-center">
