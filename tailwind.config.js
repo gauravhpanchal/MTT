@@ -7,10 +7,12 @@ module.exports = {
   ],
   theme: {
     colors: {
-      primary: "#F66F4D",
-      secondary: "#2E476B",
-      backGround: "#F5F5F5",
-      borderColor: "#334155",
+      textPrimary: "#222222",
+      textSecondary: "#777777",
+      buttonPrimary: "#5527d7",
+      buttonText: "#ffffff",
+      bgPrimary: "#ffffff",
+      bgSecondary: "#f6f4f6",
     },
     extend: {
       backgroundImage: {

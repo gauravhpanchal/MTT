@@ -76,14 +76,14 @@ const Navbar = () => {
               <h1>MTT</h1>
             </Link>
           </div>
-          <div>
+          {/* <div>
             <button className="border text-[#F66F4D] flex gap-2 items-center border-[#F66F4D] py-2 px-6 rounded-full ">
               Enquire now{" "}
               <span>
                 <FaPaperPlane />
               </span>
             </button>
-          </div>
+          </div> */}
           <div className="flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
