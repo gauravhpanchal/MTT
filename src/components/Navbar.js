@@ -70,7 +70,7 @@ const Navbar = () => {
       </div>
       {/* Navbar for Mobile */}
       <div className="md:hidden block">
-        <div className="flex justify-between py-5 rounded-full mx-4 mt-4 items-center shadow-md px-6 bg-[#F5F5F5]">
+        <div className="flex justify-between py-5 rounded-full  mx-4 items-center shadow-md px-6 bg-[#F5F5F5]">
           <div className="text-xl font-bold ">
             <Link href="/">
               <h1>MTT</h1>

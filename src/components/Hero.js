@@ -42,8 +42,8 @@ const Hero = () => {
         </div>
       </div>
       {/* Section 2 - About us */}
-      <div className="flex md:flex-row flex-col-reverse items-center gap-4 md:gap-16 md:px-32 px-4 py-8 ">
-        <div className="flex-1 space-y-4 md:text-center">
+      <div className="flex md:flex-row flex-col-reverse items-center gap-4 md:gap-16 md:px-32 py-2 ">
+        <div className="flex-1 space-y-4 md:text-center px-4">
           <h4 className="text-base text-center text-textSecondary font-bold ">
             Know more about us
           </h4>
