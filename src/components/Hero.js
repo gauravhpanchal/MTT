@@ -8,10 +8,10 @@ const Hero = () => {
   return (
     <div className="space-y-8  ">
       {/* Hero Part */}
-      <div className="flex flex-col justify-center">
-        <div className="flex md:flex-row items-center flex-col-reverse md:mx-32 mx-2">
+      <div className="flex flex-col justify-center bg-bgSecondary py-8">
+        <div className="flex md:flex-row items-center  flex-col-reverse md:mx-32 mx-2">
           <div className=" flex-1 text-center">
-            <h4 className="text-base mt-8 font-bold text-textSecondary">
+            <h4 className="text-base  font-bold text-textSecondary">
               Best Outstation Cab Service in Mumbai
             </h4>
             <h1 className="md:text-5xl text-3xl text-center mt-4 font-bold text-textPrimary">

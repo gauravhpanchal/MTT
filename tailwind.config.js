@@ -12,7 +12,7 @@ module.exports = {
       buttonPrimary: "#5527d7",
       buttonText: "#ffffff",
       bgPrimary: "#ffffff",
-      bgSecondary: "#f6f4f6",
+      bgSecondary: "#f7f7f7",
     },
     extend: {
       backgroundImage: {

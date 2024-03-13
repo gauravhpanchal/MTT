@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
           </div>
         </div> */}
         {/* Mobile */}
-        <div className=" sticky bottom-0">
+        <div className="md:hidden block sticky bottom-0">
           <BottomNav />
         </div>
       </body>
