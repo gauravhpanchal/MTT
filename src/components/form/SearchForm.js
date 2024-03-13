@@ -43,7 +43,7 @@ const SearchForm = ({ tab }) => {
                 type="date"
                 value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border md:w-60 px-2 rounded-lg"
+                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg"
               />
             </div>
             <div className="flex flex-col">
@@ -52,7 +52,7 @@ const SearchForm = ({ tab }) => {
                 type="time"
                 // value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border px-2 rounded-lg"
+                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg"
               />
             </div>
             <div className="w-full border text-center p-2 mt-2 md:mt-5 rounded-lg">
@@ -88,7 +88,7 @@ const SearchForm = ({ tab }) => {
                 type="date"
                 value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border md:w-60 px-2 rounded-lg"
+                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg"
               />
             </div>
             <div className="flex flex-col">
@@ -97,7 +97,7 @@ const SearchForm = ({ tab }) => {
                 type="time"
                 // value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border px-2 rounded-lg"
+                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg"
               />
             </div>
             <div className="w-full border text-center p-2 mt-2 md:mt-5 rounded-lg">
@@ -133,7 +133,7 @@ const SearchForm = ({ tab }) => {
                 type="date"
                 value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border md:w-60 px-2 rounded-lg"
+                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg"
               />
             </div>
             <div className="flex flex-col">
@@ -142,7 +142,7 @@ const SearchForm = ({ tab }) => {
                 type="time"
                 // value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border px-2 rounded-lg"
+                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg"
               />
             </div>
             <div className="w-full border text-center p-2 mt-2 md:mt-5 rounded-lg">
@@ -178,7 +178,7 @@ const SearchForm = ({ tab }) => {
                 type="date"
                 value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border md:w-60 px-2 rounded-lg"
+                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg"
               />
             </div>
             <div className="flex flex-col">
@@ -187,7 +187,7 @@ const SearchForm = ({ tab }) => {
                 type="time"
                 // value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border px-2 rounded-lg"
+                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg"
               />
             </div>
             <div className="w-full border text-center p-2 mt-2 md:mt-5 rounded-lg">
