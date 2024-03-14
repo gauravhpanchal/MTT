@@ -20,42 +20,42 @@ const SearchForm = ({ tab }) => {
         return (
           <form className="grid md:flex items-center grid-cols-1 md:gap-8 gap-5">
             <div className="flex flex-col">
-              <label>From</label>
+              <label className="text-textSecondary">From</label>
               <input
                 type="text"
                 // value={fromDate}
                 onChange={handleFromDateChange}
-                className="h-10 border px-2 rounded-lg"
+                className="h-10 border px-2 rounded-lg border-borderColor"
               />
             </div>
             <div className="flex flex-col">
-              <label>To</label>
+              <label className="text-textSecondary">To</label>
               <input
                 type="text"
                 // value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border px-2 rounded-lg"
+                className="h-10 border px-2 rounded-lg border-borderColor"
               />
             </div>
             <div className="flex flex-col">
-              <label>Pick Up Date</label>
+              <label className="text-textSecondary">Pick Up Date</label>
               <input
                 type="date"
                 value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg"
+                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg border-borderColor"
               />
             </div>
             <div className="flex flex-col">
-              <label>Pick Up Time</label>
+              <label className="text-textSecondary">Pick Up Time</label>
               <input
                 type="time"
                 // value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg"
+                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg border-borderColor"
               />
             </div>
-            <div className="w-full border text-center p-2 mt-2 md:mt-5 rounded-lg">
+            <div className="w-full bg-buttonPrimary hover:border font-semibold hover:border-buttonPrimary text-bgPrimary hover:text-buttonPrimary hover:bg-bgPrimary text-center p-2 mt-2 md:mt-5 rounded-lg">
               <button type="submit">Search</button>
             </div>
             {/* Additional fields specific to Outstation */}
@@ -65,42 +65,42 @@ const SearchForm = ({ tab }) => {
         return (
           <form className="grid md:flex items-center grid-cols-1 md:gap-8 gap-5">
             <div className="flex flex-col">
-              <label>From</label>
+              <label className="text-textSecondary">From</label>
               <input
                 type="text"
                 // value={fromDate}
                 onChange={handleFromDateChange}
-                className="h-10 border px-2 rounded-lg"
+                className="h-10 border px-2 rounded-lg border-borderColor"
               />
             </div>
             <div className="flex flex-col">
-              <label>To</label>
+              <label className="text-textSecondary">To</label>
               <input
                 type="text"
                 // value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border px-2 rounded-lg"
+                className="h-10 border px-2 rounded-lg border-borderColor"
               />
             </div>
             <div className="flex flex-col">
-              <label>Pick Up Date</label>
+              <label className="text-textSecondary">Pick Up Date</label>
               <input
                 type="date"
                 value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg"
+                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg border-borderColor"
               />
             </div>
             <div className="flex flex-col">
-              <label>Pick Up Time</label>
+              <label className="text-textSecondary">Pick Up Time</label>
               <input
                 type="time"
                 // value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg"
+                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg border-borderColor"
               />
             </div>
-            <div className="w-full border text-center p-2 mt-2 md:mt-5 rounded-lg">
+            <div className="w-full border bg-buttonPrimary hover:border font-semibold hover:border-buttonPrimary text-bgPrimary hover:text-buttonPrimary hover:bg-bgPrimary text-center p-2 mt-2 md:mt-5 rounded-lg">
               <button type="submit">Search</button>
             </div>
             {/* Additional fields specific to Outstation */}
@@ -110,42 +110,42 @@ const SearchForm = ({ tab }) => {
         return (
           <form className="grid md:flex items-center grid-cols-1 md:gap-8 gap-5">
             <div className="flex flex-col">
-              <label>From</label>
+              <label className="text-textSecondary">From</label>
               <input
                 type="text"
                 // value={fromDate}
                 onChange={handleFromDateChange}
-                className="h-10 border px-2 rounded-lg"
+                className="h-10 border px-2 rounded-lg border-borderColor"
               />
             </div>
             <div className="flex flex-col">
-              <label>To</label>
+              <label className="text-textSecondary">To</label>
               <input
                 type="text"
                 // value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border px-2 rounded-lg"
+                className="h-10 border px-2 rounded-lg border-borderColor"
               />
             </div>
             <div className="flex flex-col">
-              <label>Pick Up Date</label>
+              <label className="text-textSecondary">Pick Up Date</label>
               <input
                 type="date"
                 value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg"
+                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg border-borderColor"
               />
             </div>
             <div className="flex flex-col">
-              <label>Pick Up Time</label>
+              <label className="text-textSecondary">Pick Up Time</label>
               <input
                 type="time"
                 // value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg"
+                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg border-borderColor"
               />
             </div>
-            <div className="w-full border text-center p-2 mt-2 md:mt-5 rounded-lg">
+            <div className="w-full border bg-buttonPrimary hover:border font-semibold hover:border-buttonPrimary text-bgPrimary hover:text-buttonPrimary hover:bg-bgPrimary text-center p-2 mt-2 md:mt-5 rounded-lg">
               <button type="submit">Search</button>
             </div>
             {/* Additional fields specific to Outstation */}
@@ -155,42 +155,42 @@ const SearchForm = ({ tab }) => {
         return (
           <form className="grid md:flex items-center grid-cols-1 md:gap-8 gap-5">
             <div className="flex flex-col">
-              <label>From</label>
+              <label className="text-textSecondary">From</label>
               <input
                 type="text"
                 // value={fromDate}
                 onChange={handleFromDateChange}
-                className="h-10 border px-2 rounded-lg"
+                className="h-10 border px-2 rounded-lg border-borderColor"
               />
             </div>
             <div className="flex flex-col">
-              <label>To</label>
+              <label className="text-textSecondary">To</label>
               <input
                 type="text"
                 // value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border px-2 rounded-lg"
+                className="h-10 border px-2 rounded-lg border-borderColor"
               />
             </div>
             <div className="flex flex-col">
-              <label>Pick Up Date</label>
+              <label className="text-textSecondary">Pick Up Date</label>
               <input
                 type="date"
                 value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg"
+                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg border-borderColor"
               />
             </div>
             <div className="flex flex-col">
-              <label>Pick Up Time</label>
+              <label className="text-textSecondary">Pick Up Time</label>
               <input
                 type="time"
                 // value={toDate}
                 onChange={handleToDateChange}
-                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg"
+                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg border-borderColor"
               />
             </div>
-            <div className="w-full border text-center p-2 mt-2 md:mt-5 rounded-lg">
+            <div className="w-full border bg-buttonPrimary hover:border font-semibold hover:border-buttonPrimary text-bgPrimary hover:text-buttonPrimary hover:bg-bgPrimary text-center p-2 mt-2 md:mt-5 rounded-lg">
               <button type="submit">Search</button>
             </div>
             {/* Additional fields specific to Outstation */}

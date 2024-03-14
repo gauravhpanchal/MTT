@@ -10,8 +10,8 @@ const Tabs = () => {
   };
 
   return (
-    <div className="rounded-t-2xl rounded-b-3xl bg-[#fff] px-2 md:px-8 py-4 space-y-6 shadow-lg md:w-fit w-[360px] mx-auto">
-      <div className="flex justify-center md:justify-start md:gap-10 gap-6">
+    <div className="rounded-t-2xl rounded-b-3xl pt-4 bg-[#fff] px-2 md:px-8 py-4 space-y-6 shadow-2xl mt-4 md:w-fit w-[360px] mx-auto">
+      <div className="flex font-semibold text-textSecondary justify-center md:justify-start md:gap-10 gap-6">
         <button
           className={`${
             activeTab === "One Way" &&
