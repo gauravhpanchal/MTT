@@ -10,46 +10,23 @@ const Tabs = () => {
   };
 
   return (
-    <div className="rounded-t-2xl rounded-b-3xl pt-4 bg-[#fff] px-2 md:px-8 py-4 space-y-6 shadow-2xl mt-4 md:w-fit w-[360px] mx-auto">
-      <div className="flex font-semibold text-textSecondary justify-center md:justify-start md:gap-10 gap-6">
-        <button
-          className={`${
-            activeTab === "One Way" &&
-            "underline underline-offset-[15px] decoration-buttonPrimary text-buttonPrimary font-semibold"
-          }`}
-          onClick={() => handleTabClick("One Way")}
-        >
-          One Way
-        </button>
-        <button
-          className={`${
-            activeTab === "Round Trip" &&
-            "underline underline-offset-[15px] decoration-buttonPrimary text-buttonPrimary font-semibold"
-          }`}
-          onClick={() => handleTabClick("Round Trip")}
-        >
-          Round Trip
-        </button>
-        <button
-          className={`${
-            activeTab === "Local" &&
-            "underline underline-offset-[15px] decoration-buttonPrimary text-buttonPrimary font-semibold"
-          }`}
-          onClick={() => handleTabClick("Local")}
-        >
-          Local
-        </button>
-        <button
-          className={`${
-            activeTab === "Airport" &&
-            "underline underline-offset-[15px] decoration-buttonPrimary text-buttonPrimary font-semibold"
-          }`}
-          onClick={() => handleTabClick("Airport")}
-        >
-          Airport
-        </button>
+    <div className="rounded-2xl  bg-[#fff] px-2  shadow-lg mt-5 md:w-fit w-[360px] mx-auto">
+      <div className="flex flex-col md:flex-row items-center font-semibold text-textSecondary justify-center md:justify-start md:gap-0">
+        <div className="flex flex-col w-full py-4 px-4 md:px-0 md:pl-4 ">
+          <label className="text-textSecondary">TRIP TYPE</label>
+          <select
+            className="h-10 border px-2 rounded-lg border-borderColor font-semibold"
+            value={activeTab}
+            onChange={(e) => handleTabClick(e.target.value)}
+          >
+            <option value="One Way">One Way</option>
+            <option value="Round Trip">Round Trip</option>
+            <option value="Local">Local</option>
+            <option value="Airport">Airport</option>
+          </select>
+        </div>
+        <SearchForm tab={activeTab} />
       </div>
-      <SearchForm tab={activeTab} />
     </div>
   );
 };

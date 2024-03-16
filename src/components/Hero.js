@@ -1,13 +1,14 @@
 import Image from "next/image";
 import heroTop from "@/images/hero-top.jpg";
-import SearchForm from "./form/SearchForm";
 import Tabs from "./form/Tabs";
 
 const Hero = () => {
-  const tabs = ["Outstation", "Local", "Airport"];
   return (
-    <div className="flex flex-col justify-center bg-bgSecondary">
-      <div className="flex md:flex-row items-center  flex-col-reverse md:mx-32 mx-2">
+    <div className="flex flex-col gap-10 justify-center bg-bgSecondary">
+      <div className="sticky top-0 mt-2 bg-bgSecondary">
+        <Tabs />
+      </div>
+      <div className="flex md:flex-row items-center flex-col-reverse md:mx-32 mx-2">
         <div className=" flex-1 text-center">
           <h4 className="text-base  font-bold text-textSecondary">
             Best Outstation Cab Service in Mumbai
@@ -30,7 +31,6 @@ const Hero = () => {
           />
         </div>
       </div>
-      <Tabs />
     </div>
   );
 };
