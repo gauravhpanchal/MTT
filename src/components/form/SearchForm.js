@@ -18,58 +18,92 @@ const SearchForm = ({ tab }) => {
     switch (tab) {
       case "One Way":
         return (
-          <form className="grid md:flex items-center grid-cols-1 md:gap-2 gap-5">
-            <div className="flex flex-col">
-              <label className="text-textSecondary">FROM</label>
-              <input
-                type="text"
-                list="fromList"
-                // value={fromDate}
-                onChange={handleFromDateChange}
-                className="h-10 border px-2 rounded-lg border-borderColor"
-              />
-              <datalist id="fromList">
-                <option value="Objective C">Objective C</option>
-                <option value="C++">C++</option>
-                <option value="C#">C#</option>
-                <option value="Cobol">Cobol</option>
-                <option value="Go">Go</option>
-                <option value="Java">Java</option>
-                <option value="JavaScript">JavaScript</option>
-                <option value="Python">Python</option>
-                <option value="PHP">PHP</option>
-                <option value="Pascal">Pascal</option>
-                <option value="Perl">Perl</option>
-                <option value="R">R</option>
-                <option value="Swift">Swift</option>
-              </datalist>
+          <form className="grid md:flex items-center grid-cols-1 md:gap-3 gap-5">
+            <div className="flex gap-3 w-[310px] justify-between md:w-full ">
+              {/* FROM */}
+              <div className="flex w-[48%] flex-col">
+                <label className="text-textSecondary md:text-sm text-xs">
+                  FROM
+                </label>
+                <input
+                  type="text"
+                  list="fromList"
+                  // value={fromDate}
+                  onChange={handleFromDateChange}
+                  className="h-10 border w-[150px] px-2 rounded-lg border-borderColor"
+                />
+                <datalist id="fromList">
+                  <option value="Andheri">Andheri</option>
+                  <option value="Bandra">Bandra</option>
+                  <option value="Borivali">Borivali</option>
+                  <option value="Chembur">Chembur</option>
+                  <option value="Dadar">Dadar</option>
+                  <option value="Dharavi">Dharavi</option>
+                  <option value="Goregaon">Goregaon</option>
+                  <option value="Juhu">Juhu</option>
+                  <option value="Kandivali">Kandivali</option>
+                  <option value="Malad">Malad</option>
+                  <option value="Mulund">Mulund</option>
+                  <option value="Santacruz">Santacruz</option>
+                  <option value="Thane">Thane</option>
+                  <option value="Vashi">Vashi</option>
+                </datalist>
+              </div>
+              {/* TO */}
+              <div className="flex w-[48%] flex-col">
+                <label className="text-textSecondary md:text-sm text-xs">
+                  TO
+                </label>
+                <input
+                  type="text"
+                  list="toList"
+                  // value={toDate}
+                  onChange={handleToDateChange}
+                  className="h-10 border w-[150px] px-2 rounded-lg border-borderColor"
+                />
+                <datalist id="toList">
+                  <option value="Andheri">Andheri</option>
+                  <option value="Bandra">Bandra</option>
+                  <option value="Borivali">Borivali</option>
+                  <option value="Chembur">Chembur</option>
+                  <option value="Dadar">Dadar</option>
+                  <option value="Dharavi">Dharavi</option>
+                  <option value="Goregaon">Goregaon</option>
+                  <option value="Juhu">Juhu</option>
+                  <option value="Kandivali">Kandivali</option>
+                  <option value="Malad">Malad</option>
+                  <option value="Mulund">Mulund</option>
+                  <option value="Santacruz">Santacruz</option>
+                  <option value="Thane">Thane</option>
+                  <option value="Vashi">Vashi</option>
+                </datalist>
+              </div>
             </div>
-            <div className="flex flex-col">
-              <label className="text-textSecondary">TO</label>
-              <input
-                type="text"
-                // value={toDate}
-                onChange={handleToDateChange}
-                className="h-10 border px-2 rounded-lg border-borderColor"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label className="text-textSecondary">PICK-UP DATE</label>
-              <input
-                type="date"
-                value={toDate}
-                onChange={handleToDateChange}
-                className="h-10 border md:w-60 w-[312px] px-2 rounded-lg border-borderColor"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label className="text-textSecondary">PICK-UP TIME</label>
-              <input
-                type="time"
-                // value={toDate}
-                onChange={handleToDateChange}
-                className="h-10 border px-2 md:w-60 w-[312px] rounded-lg border-borderColor"
-              />
+            <div className="flex gap-3 w-[310px] justify-between md:w-full ">
+              {/* PICK-UP DATE */}
+              <div className="flex w-[48%] flex-col">
+                <label className="text-textSecondary md:text-sm text-xs">
+                  PICK-UP DATE
+                </label>
+                <input
+                  type="date"
+                  value={toDate}
+                  onChange={handleToDateChange}
+                  className="h-10 border px-2 rounded-lg border-borderColor"
+                />
+              </div>
+              {/* PICK-UP TIME */}
+              <div className="flex w-[48%] flex-col">
+                <label className="text-textSecondary md:text-sm text-xs">
+                  PICK-UP TIME
+                </label>
+                <input
+                  type="time"
+                  // value={toDate}
+                  onChange={handleToDateChange}
+                  className="h-10 border px-2 rounded-lg border-borderColor"
+                />
+              </div>
             </div>
             <div className="w-full bg-buttonPrimary hover:border font-semibold hover:border-buttonPrimary text-bgPrimary hover:text-buttonPrimary hover:bg-bgPrimary text-center p-2 mt-2 md:mt-5 rounded-lg">
               <button type="submit">Search</button>

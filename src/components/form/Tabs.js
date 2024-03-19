@@ -10,10 +10,12 @@ const Tabs = () => {
   };
 
   return (
-    <div className="rounded-2xl  bg-[#fff] px-2  shadow-lg mt-5 md:w-fit w-[360px] mx-auto">
-      <div className="flex flex-col md:flex-row items-center font-semibold text-textSecondary justify-center md:justify-start md:gap-0">
+    <div className="rounded-2xl bg-[#fff] px-2 shadow-lg md:w-fit w-[360px] mx-auto">
+      <div className="flex flex-col md:flex-row items-center font-semibold text-textSecondary justify-center md:justify-start md:gap-1">
         <div className="flex flex-col w-full py-4 px-4 md:px-0 md:pl-4 ">
-          <label className="text-textSecondary">TRIP TYPE</label>
+          <label className="text-textSecondary md:text-sm text-xs">
+            TRIP TYPE
+          </label>
           <select
             className="h-10 border px-2 rounded-lg border-borderColor font-semibold"
             value={activeTab}
