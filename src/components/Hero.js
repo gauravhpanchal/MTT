@@ -58,7 +58,7 @@ const brands = [
 const Hero = () => {
   return (
     <div className="flex flex-col gap-10 justify-center bg-bgSecondary">
-      <div className="sticky top-0 mt-2 bg-bgSecondary">
+      <div className="mt-2 bg-bgSecondary">
         <Tabs />
       </div>
       <div className="flex md:flex-row items-center flex-col-reverse md:mx-32 mx-2">
@@ -84,16 +84,25 @@ const Hero = () => {
           />
         </div>
       </div>
-      <Marquee pauseOnHover className="border-[0.5px] py-5 ">
-        {brands.map((brand) => (
-          <div
-            key={brand.id}
-            className="p-4 mx-4 font-semibold shadow-md w-60 text-center h-full text-lg"
-          >
-            {brand.name}
-          </div>
-        ))}
-      </Marquee>
+      <div className="text-center">
+        <p className="text-3xl mb-2 font-semibold">
+          Trusted by 100+ Companies Big & Small
+        </p>
+        <p className="text-xl mb-4 text-textSecondary">
+          The world's leading companies trust Maharashtra Tours for all their
+          travel requirements.
+        </p>
+        <Marquee pauseOnHover className="shadow-md py-5 ">
+          {brands.map((brand) => (
+            <div
+              key={brand.id}
+              className="p-4 mx-4 font-semibold border border-textSecondary rounded-xl w-60 text-textSecondary text-center h-full text-lg"
+            >
+              {brand.name}
+            </div>
+          ))}
+        </Marquee>
+      </div>
     </div>
   );
 };

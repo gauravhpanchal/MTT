@@ -10,14 +10,14 @@ const Tabs = () => {
   };
 
   return (
-    <div className="rounded-2xl bg-[#fff] px-2 shadow-lg md:w-fit w-[360px] mx-auto">
+    <div className="rounded-lg bg-[#fff] pr-4 shadow-lg md:w-fit w-[360px] mx-auto">
       <div className="flex flex-col md:flex-row items-center font-semibold text-textSecondary justify-center md:justify-start md:gap-1">
         <div className="flex flex-col w-full py-4 px-4 md:px-0 md:pl-4 ">
           <label className="text-textSecondary md:text-sm text-xs">
             TRIP TYPE
           </label>
           <select
-            className="h-10 border px-2 rounded-lg border-borderColor font-semibold"
+            className="h-10 border px-2 text- text-sm rounded-lg border-borderColor font-semibold"
             value={activeTab}
             onChange={(e) => handleTabClick(e.target.value)}
           >
