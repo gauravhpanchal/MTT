@@ -35,6 +35,91 @@ const navItems = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
+
+  const PopupForm = () => {
+    return (
+      <div className="fixed z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-bgPrimary p-8 rounded-md shadow-md">
+        <div className="flex justify-between mb-4">
+          <h2 className="text-2xl font-semibold text-textPrimary ">
+            Enquire Now
+          </h2>
+          <button className="border border-borderColor p-1 rounded-md">
+            <RiCloseFill onClick={togglePopup} className="w-6 h-6 text-black" />
+          </button>
+        </div>
+        <form>
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="name"
+            >
+              Name:
+            </label>
+            <input
+              className="shadow appearance-none border border-borderColor rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="name"
+              type="text"
+              placeholder="Name"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="phone"
+            >
+              Phone Number:
+            </label>
+            <input
+              className="shadow appearance-none border border-borderColor rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="phone"
+              type="text"
+              placeholder="Phone Number"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="email"
+            >
+              Email:
+            </label>
+            <input
+              className="shadow appearance-none border border-borderColor rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="email"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="requirements"
+            >
+              Requirements:
+            </label>
+            <textarea
+              className="shadow appearance-none border border-borderColor rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="requirements"
+              placeholder="Enter your requirements"
+            ></textarea>
+          </div>
+          <button
+            className="bg-buttonPrimary hover:border text-bgPrimary w-full text-center hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="button"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    );
+  };
+
   return (
     <div>
       {/* Navbar for Web */}
@@ -59,7 +144,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div>
-            <button className="border text-buttonPrimary hover:bg-buttonPrimary hover:text-[#ffffff] flex gap-2 items-center border-buttonPrimary py-2 px-6 rounded-full ">
+            <button
+              onClick={togglePopup}
+              className="border text-buttonPrimary hover:bg-buttonPrimary hover:text-[#ffffff] flex gap-2 items-center border-buttonPrimary py-2 px-6 rounded-full "
+            >
               Enquire now{" "}
               <span>
                 <FaPaperPlane />
@@ -67,6 +155,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+        {isPopupOpen && <PopupForm />}
       </div>
       {/* Navbar for Mobile */}
       <div className="md:hidden block">

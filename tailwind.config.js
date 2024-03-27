@@ -13,7 +13,7 @@ module.exports = {
       buttonText: "#ffffff",
       bgPrimary: "#ffffff",
       bgSecondary: "#f7f7f7",
-      borderColor: "#9ca3af",
+      borderColor: "#d1d5db",
     },
     extend: {
       backgroundImage: {

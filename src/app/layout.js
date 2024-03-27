@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         {/* <div className="sticky top-0 bg-bgSecondary"> */}
-        <div className="bg-bgSecondary pb-4">
+        <div className="bg-bgSecondary sticky top-0 ">
           <Navbar />
         </div>
         <div className="bg-bgSecondary">{children}</div>

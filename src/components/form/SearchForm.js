@@ -29,8 +29,9 @@ const SearchForm = ({ tab }) => {
                   type="text"
                   list="fromList"
                   // value={fromDate}
+                  placeholder="Ex: Mumbai"
                   onChange={handleFromDateChange}
-                  className="h-10 border w-[150px] px-2 rounded-lg border-borderColor"
+                  className="h-10 border w-[150px] px-2 text-sm rounded-lg border-borderColor"
                 />
                 <datalist id="fromList">
                   <option value="Andheri">Andheri</option>
@@ -57,9 +58,10 @@ const SearchForm = ({ tab }) => {
                 <input
                   type="text"
                   list="toList"
+                  placeholder="Ex: Pune"
                   // value={toDate}
                   onChange={handleToDateChange}
-                  className="h-10 border w-[150px] px-2 rounded-lg border-borderColor"
+                  className="h-10 border w-[150px] px-2 text-sm rounded-lg border-borderColor"
                 />
                 <datalist id="toList">
                   <option value="Andheri">Andheri</option>
@@ -81,19 +83,20 @@ const SearchForm = ({ tab }) => {
             </div>
             <div className="flex gap-3 w-[310px] justify-between md:w-full ">
               {/* PICK-UP DATE */}
-              <div className="flex w-[48%] flex-col">
+              <div className="flex md:w-[50%] w-[150px] flex-col">
                 <label className="text-textSecondary md:text-sm text-xs">
                   PICK-UP DATE
                 </label>
                 <input
                   type="date"
                   value={toDate}
+                  placeholder="Pick Date"
                   onChange={handleToDateChange}
-                  className="h-10 border px-2 rounded-lg border-borderColor"
+                  className="h-10 border   px-2 rounded-lg  text-sm border-borderColor"
                 />
               </div>
               {/* PICK-UP TIME */}
-              <div className="flex w-[48%] flex-col">
+              <div className="flex md:w-[50%] w-[150px] flex-col">
                 <label className="text-textSecondary md:text-sm text-xs">
                   PICK-UP TIME
                 </label>
