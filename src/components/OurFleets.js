@@ -71,6 +71,7 @@ const OurFleets = () => {
     <div className="flex mt-8 justify-center flex-col items-center gap-4 md:gap-16 md:px-32 py-2 ">
       <H1 content={"Our Fleets"} />
       {/* Cars Container */}
+      {/* Web */}
       <div className="grid md:grid-cols-4 gap-4 grid-cols-1">
         {fleetsData.map((fleet) => (
           <div
@@ -80,8 +81,6 @@ const OurFleets = () => {
             <div className="h-[210px] w-[300px]">
               <Image
                 src={fleet.img}
-                width={300}
-                // height={210}
                 className="w-[300px] overflow-hidden object-contain h-auto rounded-2xl"
                 alt="hero"
               />

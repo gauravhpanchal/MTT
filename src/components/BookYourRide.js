@@ -16,14 +16,14 @@ const BookYourRide = () => {
           Book Your Ride Today
         </h1>
         <h4 className="text-base text-textSecondary font-bold text-justify">
-          Ready to experience the convenience and reliability of Shree Ganesh
-          Cab? Booking your ride is easy! Simply visit our website, use our
-          user-friendly app, or give us a call. Your journey with Shree Ganesh
-          Cab begins with a click or a call.
+          Ready to experience the convenience and reliability of Maharashtra
+          Tour? Booking your ride is easy! Simply visit our website, use our
+          user-friendly app, or give us a call. Your journey with Maharashtra
+          Tour begins with a click or a call.
         </h4>
         <h4 className="text-base text-textSecondary font-bold text-justify">
           Join the countless satisfied customers who have made us their
-          preferred choice for taxi services in Mumbai. Shree Ganesh Cab - Where
+          preferred choice for taxi services in Mumbai. Maharashtra Tour - Where
           Comfort Meets Convenience!
         </h4>
         <div className="grid md:grid-cols-3 grid-cols-1 md:gap-0 gap-8 ">

@@ -6,7 +6,7 @@ const CallNowButton = () => {
       {/* Call Button */}
       <a
         href="tel:+919076182397"
-        className="bg-green-500 text-buttonText z-50 bg-[#25d366] flex items-center gap-2 hover:bg-green-600 text-white px-4 py-2  rounded-xl shadow"
+        className="bg-green-500 text-buttonText z-50 bg-buttonPrimary flex items-center gap-2 hover:bg-green-600 text-white px-4 py-2  rounded-xl shadow"
       >
         <MdAddCall className="h-8 w-8" />
         <span className="font-semibold">Call Now</span>
