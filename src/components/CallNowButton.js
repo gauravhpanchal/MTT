@@ -2,7 +2,7 @@ import { MdAddCall } from "react-icons/md";
 
 const CallNowButton = () => {
   return (
-    <div className="fixed bottom-4 left-4">
+    <div className="fixed md:block hidden bottom-4 left-4">
       {/* Call Button */}
       <a
         href="tel:+919076182397"
