@@ -20,12 +20,12 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         {/* <div className="sticky top-0 bg-bgSecondary"> */}
-        <div className="bg-bgSecondary sticky top-0 ">
+        <div className="bg-bgSecondary z-20 sticky top-0 ">
           <Navbar />
         </div>
         <div className="bg-bgSecondary">{children}</div>
         {/* Mobile */}
-        <div className="md:hidden block sticky bottom-0">
+        <div className="md:hidden block">
           <BottomNav />
         </div>
       </body>
