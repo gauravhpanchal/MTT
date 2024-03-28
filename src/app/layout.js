@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
         <meta name="description" content="Description" />
       </head>
       <body className={inter.className}>
-        {/* <div className="sticky top-0 bg-bgSecondary"> */}
         <div className="bg-bgSecondary z-20 sticky top-0 ">
           <Navbar />
         </div>
