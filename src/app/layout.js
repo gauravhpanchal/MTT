@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <div className="bg-bgSecondary z-20 sticky top-0 ">
           <Navbar />
         </div>
-        <div className="bg-bgSecondary">{children}</div>
+        <div className="bg-bgSecondary pb-20 ">{children}</div>
         {/* Mobile */}
         <div className="md:hidden block">
           <BottomNav />

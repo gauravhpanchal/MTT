@@ -2,7 +2,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppButton = ({ textMessage }) => {
   return (
-    <div className="fixed bottom-4 right-4">
+    <div className="fixed md:block hidden bottom-4 right-4">
       {/* WhatsApp Button */}
       <a
         href={`https://wa.me/919076182397?text=${textMessage}`}
