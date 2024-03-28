@@ -96,7 +96,7 @@ const Hero = () => {
           {brands.map((brand) => (
             <div
               key={brand.id}
-              className="p-4 mx-4 font-semibold border border-textSecondary rounded-xl w-60 text-textSecondary text-center h-full text-lg"
+              className="p-4 z-0 mx-4 font-semibold border border-textSecondary rounded-xl w-60 text-textSecondary text-center h-full text-lg"
             >
               {brand.name}
             </div>
