@@ -72,11 +72,39 @@ const OurFleets = () => {
       <H1 content={"Our Fleets"} />
       {/* Cars Container */}
       {/* Web */}
-      <div className="grid md:grid-cols-4 gap-4 grid-cols-1">
+      <div className="md:grid md:grid-cols-4 gap-4 hidden ">
         {fleetsData.map((fleet) => (
           <div
             key={fleet.id}
             className="shadow-md hover:shadow-xl pb-3 rounded-2xl"
+          >
+            <div className="h-[210px] w-[300px]">
+              <Image
+                src={fleet.img}
+                className="w-[300px] overflow-hidden object-contain h-auto rounded-2xl"
+                alt="hero"
+              />
+            </div>
+            <div className="px-4 space-y-3 ">
+              <p className="text-lg font-semibold">
+                {fleet.name} ({fleet.seats} Seater)
+              </p>
+              <div className="flex items-center justify-between">
+                <button className="border hover:bg-buttonPrimary hover:text-buttonText border-buttonPrimary text-buttonPrimary px-4 py-2 rounded-xl w-40 font-semibold">
+                  Book Now
+                </button>
+                <p className="text-lg font-semibold">₹{fleet.rate}/km</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* Mobile */}
+      <div className="carousel md:hidden carousel-center max-w-md space-x-5 px-16 py-4 bg-bgSecondary rounded-box">
+        {fleetsData.map((fleet) => (
+          <div
+            key={fleet.id}
+            className="carousel-item flex flex-col gap-5 shadow-md hover:shadow-xl pb-3 rounded-2xl"
           >
             <div className="h-[210px] w-[300px]">
               <Image
