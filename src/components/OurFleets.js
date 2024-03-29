@@ -100,11 +100,11 @@ const OurFleets = () => {
         ))}
       </div>
       {/* Mobile */}
-      <div className="carousel md:hidden carousel-center max-w-md space-x-5 px-16 py-4 bg-bgSecondary rounded-box">
+      <div className="carousel md:hidden w-screen carousel-center max-w-md space-x-10 pl-16 py-4 bg-bgSecondary rounded-box">
         {fleetsData.map((fleet) => (
           <div
             key={fleet.id}
-            className="carousel-item flex flex-col gap-5 shadow-md hover:shadow-xl pb-3 rounded-2xl"
+            className="carousel-item flex flex-col shadow-md hover:shadow-xl pb-3 rounded-2xl"
           >
             <div className="h-[210px] w-[300px]">
               <Image
