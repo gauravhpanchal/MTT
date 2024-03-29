@@ -100,8 +100,7 @@ const OurFleets = () => {
         ))}
       </div>
       {/* Mobile */}
-      <div className="carousel md:hidden carousel-center max-w-md space-x-5 px-16 bg-bgPrimary rounded-box">
-        {/* <div className="carousel-item"> */}
+      <div className="carousel md:hidden carousel-center max-w-md space-x-5 px-16 py-4 bg-bgSecondary rounded-box">
         {fleetsData.map((fleet) => (
           <div
             key={fleet.id}
@@ -127,7 +126,6 @@ const OurFleets = () => {
             </div>
           </div>
         ))}
-        {/* </div> */}
       </div>
     </div>
   );
