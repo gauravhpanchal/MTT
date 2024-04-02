@@ -85,7 +85,7 @@ const WhatWeOffer = () => {
         {fleetsData.map((fleet) => (
           <div
             key={fleet.id}
-            className="shadow-md hover:shadow-xl pb-8 rounded-2xl"
+            className="shadow-md hover:shadow-xl pb-6 rounded-2xl"
           >
             <div className="h-[210px] w-[300px]">
               <Image
@@ -96,12 +96,18 @@ const WhatWeOffer = () => {
             </div>
             <div className="px-4 space-y-3 ">
               <p className="text-lg font-semibold text-center ">{fleet.name}</p>
-              <div className="items-center text-center w-full ">
+              <div className="items-center flex justify-between gap-4 text-center w-full ">
                 <Link
                   href={`https://wa.me/919076182397?text=${fleet.textMessage}`}
-                  className="border text-center hover:bg-buttonPrimary hover:text-buttonText border-buttonPrimary text-buttonPrimary px-4 py-2 rounded-xl w-80 font-semibold"
+                  className="border text-center bg-buttonPrimary text-buttonText  px-4 py-2 rounded-xl w-80 font-semibold"
                 >
                   Book Now
+                </Link>
+                <Link
+                  href={`https://wa.me/919076182397?text=${fleet.textMessage}`}
+                  className="border text-center  border-buttonPrimary text-buttonPrimary px-4 py-2 rounded-xl w-80 font-semibold"
+                >
+                  View More
                 </Link>
               </div>
             </div>
@@ -124,12 +130,18 @@ const WhatWeOffer = () => {
             </div>
             <div className="px-4 space-y-6 text-center ">
               <p className="text-lg font-semibold  ">{fleet.name}</p>
-              <div className="text-center items-center">
+              <div className="flex text-center justify-evenly items-center gap-4">
                 <Link
                   href={`https://wa.me/919076182397?text=${fleet.textMessage}`}
-                  className="border hover:bg-buttonPrimary hover:text-buttonText border-buttonPrimary text-buttonPrimary px-4 py-2 rounded-xl w-1/2 text-center font-semibold"
+                  className="border bg-buttonPrimary text-buttonText px-4 py-2 rounded-xl text-center font-semibold"
                 >
                   Book Now
+                </Link>
+                <Link
+                  href={`https://wa.me/919076182397?text=${fleet.textMessage}`}
+                  className="border text-center  border-buttonPrimary text-buttonPrimary px-4 py-2 rounded-xl font-semibold"
+                >
+                  View More
                 </Link>
               </div>
             </div>

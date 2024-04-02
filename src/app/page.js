@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <Hero />
       <About />
-      <WhatWeOffer/>
+      <WhatWeOffer />
       <OurFleets />
       <BookYourRide />
       <WhatsAppButton textMessage="I'm interested in your car for sale" />
