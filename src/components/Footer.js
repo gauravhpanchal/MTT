@@ -1,11 +1,21 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="footer footer-center mb-10 md:mb-0 p-10 bg-base-200 text-base-content rounded">
       <nav className="grid grid-flow-col gap-4">
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Services</a>
-        <a className="link link-hover">Fleets</a>
+        <Link href="/about-us" className="link link-hover">
+          About us
+        </Link>
+        <Link href="/contact-us" className="link link-hover">
+          Contact
+        </Link>
+        <Link href="/services-mtt" className="link link-hover">
+          Services
+        </Link>
+        <Link href="/fleets" className="link link-hover">
+          Fleets
+        </Link>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">

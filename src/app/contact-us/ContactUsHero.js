@@ -11,14 +11,14 @@ const data = [
   {
     icons: HiOutlineLocationMarker,
     title: "Office",
-    description: "Come say hello at our office HQ.",
+    description: "Come say hello at our office.",
     additional: "Vikhroli, Mumbai",
   },
   {
     icons: FiPhone,
     title: "Phone",
     description: "Mon-Fri 8am-5pm",
-    additional: "+91 8779059029",
+    additional: "+91 9076182397",
   },
 ];
 
