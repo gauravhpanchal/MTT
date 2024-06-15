@@ -15,20 +15,14 @@ const About = () => {
         </h1>
         <h4 className="text-base text-textSecondary font-bold text-justify">
           Maharashtra Tour and Travel provides a comprehensive range of
-          transportation services, including taxi, car, and bus rentals in {""}
-          <Link
-            href="https://en.m.wikipedia.org/wiki/Mumbai"
-            className="underline"
-          >
-            Mumbai
-          </Link>
-          . Whether you need a vehicle for outstation travel, one-way pickup and
-          drop, round trips, sightseeing tours, or city local rentals, we have
-          you covered. Our affordable prices ensure that you can explore
-          Maharashtra without breaking the bank. Additionally, we offer
-          Maharashtra tour packages that include all the must-visit destinations
-          in the state. Experience convenience, comfort, and affordability with
-          Maharashtra Tour and Travel.
+          transportation services, including taxi, car, and bus rentals in
+          Mumbai . Whether you need a vehicle for outstation travel, one-way
+          pickup and drop, round trips, sightseeing tours, or city local
+          rentals, we have you covered. Our affordable prices ensure that you
+          can explore Maharashtra without breaking the bank. Additionally, we
+          offer Maharashtra tour packages that include all the must-visit
+          destinations in the state. Experience convenience, comfort, and
+          affordability with Maharashtra Tour and Travel.
         </h4>
       </div>
       <div className="flex-1">
