@@ -129,13 +129,11 @@ const WhatWeOffer = () => {
             key={fleet.id}
             className="carousel-item gap-4 flex flex-col shadow-md hover:shadow-xl pb-4 rounded-2xl"
           >
-            <div className="h-[200px] w-[300px]">
-              <Image
-                src={fleet.img}
-                className="w-[300px] overflow-hidden object-cover h-[200px] rounded-2xl"
-                alt="hero"
-              />
-            </div>
+            <Image
+              src={fleet.img}
+              className="w-full object-cover overflow-hidden h-[200px] rounded-2xl"
+              alt="hero"
+            />
             <div className="px-4 space-y-3 text-center ">
               <p className="text-lg font-semibold  ">{fleet.name}</p>
               <div className="flex text-center justify-evenly items-center gap-4">
