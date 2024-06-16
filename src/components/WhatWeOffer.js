@@ -17,20 +17,23 @@ const fleetsData = [
     name: "Mumbai Darshan",
     textMessage:
       "I'm looking for a Mumbai Darshan package. Please share the details.",
+    href: "/mumbai-darshan-tour",
   },
   {
     id: 2,
     img: carrental,
-    name: "Car Rental With Driver",
+    name: "3 Jyotirlinga In Maharashtra Tour",
     textMessage:
       "I'm looking for a car rental with driver. Please share the details.",
+    href: "/3-jyotirlinga-in-maharashtra",
   },
   {
     id: 3,
     img: cab,
-    name: "Interstate Cab Services",
+    name: "5 Jyotirlinga In Maharashtra Tour",
     textMessage:
       "I'm looking for an interstate cab service. Please share the details.",
+    href: "/5-jyotirlinga-in-maharashtra",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const fleetsData = [
     name: "Outstation Cab Services",
     textMessage:
       "I'm looking for an outstation cab service. Please share the details.",
+    href: "/outstation-cab-services",
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ const fleetsData = [
     name: "Local Cab Services",
     textMessage:
       "I'm looking for a local cab service. Please share the details.",
+    href: "/local-cab-services",
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const fleetsData = [
     name: "Airport Pickup Or Drop",
     textMessage:
       "I'm looking for an airport pickup or drop service. Please share the details.",
+    href: "/airport-pickup-or-drop",
   },
   {
     id: 7,
@@ -59,6 +65,7 @@ const fleetsData = [
     name: "Hire For An Hour Services",
     textMessage:
       "I'm looking for a hire for an hour service. Please share the details.",
+    href: "/hire-for-an-hour-services",
   },
   {
     id: 8,
@@ -66,6 +73,7 @@ const fleetsData = [
     name: "Luxury Car Rental",
     textMessage:
       "I'm looking for a luxury car rental service. Please share the details.",
+    href: "/luxury-car-rental",
   },
 ];
 
@@ -81,21 +89,21 @@ const WhatWeOffer = () => {
 
       {/* Cars Container */}
       {/* Web */}
-      <div className="md:grid md:grid-cols-4 gap-6 hidden ">
+      <div className="md:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 hidden ">
         {fleetsData.map((fleet) => (
           <div
             key={fleet.id}
-            className="shadow-md hover:shadow-xl pb-6 rounded-2xl"
+            className="shadow-md hover:shadow-xl p-2 flex flex-col rounded-3xl"
           >
-            <div className="h-[210px] w-[300px]">
-              <Image
-                src={fleet.img}
-                className="w-[300px] object-cover overflow-hidden h-[200px] rounded-2xl"
-                alt="hero"
-              />
-            </div>
-            <div className="px-4 space-y-3 ">
-              <p className="text-lg font-semibold text-center ">{fleet.name}</p>
+            <Image
+              src={fleet.img}
+              className="w-full object-cover overflow-hidden h-[200px] rounded-2xl"
+              alt="hero"
+            />
+            <div className="px-4 mb-3 space-y-3 ">
+              <p className="text-lg font-semibold mt-2 line-clamp-1 ">
+                {fleet.name}
+              </p>
               <div className="items-center flex justify-between gap-4 text-center w-full ">
                 <Link
                   href={`https://wa.me/919076182397?text=${fleet.textMessage}`}
@@ -104,7 +112,7 @@ const WhatWeOffer = () => {
                   Book Now
                 </Link>
                 <Link
-                  href={`https://wa.me/919076182397?text=${fleet.textMessage}`}
+                  href={`${fleet.href}`}
                   className="border text-center  border-buttonPrimary text-buttonPrimary px-4 py-2 rounded-xl w-80 font-semibold"
                 >
                   View More
@@ -119,16 +127,14 @@ const WhatWeOffer = () => {
         {fleetsData.map((fleet) => (
           <div
             key={fleet.id}
-            className="carousel-item gap-4 flex flex-col shadow-md hover:shadow-xl pb-8 rounded-2xl"
+            className="carousel-item gap-4 flex flex-col shadow-md hover:shadow-xl pb-4 rounded-2xl"
           >
-            <div className="h-[210px] w-[300px]">
-              <Image
-                src={fleet.img}
-                className="w-[300px] overflow-hidden object-cover h-[200px] rounded-2xl"
-                alt="hero"
-              />
-            </div>
-            <div className="px-4 space-y-6 text-center ">
+            <Image
+              src={fleet.img}
+              className="w-full object-cover overflow-hidden h-[200px] rounded-2xl"
+              alt="hero"
+            />
+            <div className="px-4 space-y-3 text-center ">
               <p className="text-lg font-semibold  ">{fleet.name}</p>
               <div className="flex text-center justify-evenly items-center gap-4">
                 <Link
@@ -138,7 +144,7 @@ const WhatWeOffer = () => {
                   Book Now
                 </Link>
                 <Link
-                  href={`https://wa.me/919076182397?text=${fleet.textMessage}`}
+                  href={`${fleet.href}`}
                   className="border text-center  border-buttonPrimary text-buttonPrimary px-4 py-2 rounded-xl font-semibold"
                 >
                   View More

@@ -58,9 +58,9 @@ const brands = [
 const Hero = () => {
   return (
     <div className="flex flex-col gap-10 justify-center bg-bgSecondary">
-      <div className="mt-2 bg-bgSecondary">
+      {/* <div className="mt-2 bg-bgSecondary">
         <Tabs />
-      </div>
+      </div> */}
       <div className="flex md:flex-row items-center flex-col-reverse md:mx-32 mx-2">
         <div className=" flex-1 text-center">
           <h4 className="text-base  font-bold text-textSecondary">
@@ -92,7 +92,7 @@ const Hero = () => {
           The world's leading companies trust Maharashtra Tours for all their
           travel requirements.
         </p>
-        <Marquee pauseOnHover className="shadow-md py-5 ">
+        <Marquee pauseOnHover className="shadow-md py-5 pointer-events-none ">
           {brands.map((brand) => (
             <div
               key={brand.id}

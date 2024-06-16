@@ -15,6 +15,18 @@ const navItems = [
     name: "Tour Packages",
     href: "/tour-packages",
   },
+  // {
+  //   name: "Hotel",
+  //   href: "/hotel",
+  // },
+  // {
+  //   name: "Cabs",
+  //   href: "/cabs",
+  // },
+  // {
+  //   name: "Bus",
+  //   href: "/bus",
+  // },
   {
     name: "Fleets",
     href: "/fleets",
