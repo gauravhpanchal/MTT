@@ -194,7 +194,7 @@ const MumbaiDarshan = () => {
         <p className="text-3xl font-semibold">FAQ for Mumbai Darshan Cab</p>
         <div className="divide-y divide-gray-100 rounded-xl border border-gray-100 bg-white">
           {faq.map((item) => (
-            <details className="group p-4 [&_summary::-webkit-details-marker]:hidden">
+            <details key={item.question} className="group p-4 [&_summary::-webkit-details-marker]:hidden">
               <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
                 <h2 className="text-lg font-medium">{item.question}</h2>
 
